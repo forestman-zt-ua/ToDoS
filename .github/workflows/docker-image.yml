@@ -1,0 +1,18 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: yusufbiberoglu/symfony-elasticsearch@v1.0.0
+    - name: Build the Docker image
+      uses: yusufbiberoglu/symfony-elasticsearch@v1.0.0
